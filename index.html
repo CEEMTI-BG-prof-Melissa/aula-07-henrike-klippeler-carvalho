@@ -1,14 +1,14 @@
 <html>
 <body>
-    <form action="recebe.html" method="GET">
+    <form action="recebe.html" method="POST">
     <H1> Cadastro pessoal </H1>
     Nome completo: <input type="text" id="nome_completo" name="nome" maxlength="50">
     <br> <br>
-    Senha: <input type="password">
+    Senha: <input id="senha" name="senha" type="password">
     <br> <br>
     Idade: <input type="number" id="idade" name="idade" min="1" max="100">
     <br> <br>
-    E-mail: <input type="email">
+    E-mail: <input id="email" name="email" type="email">
     <br> <br>
     Data de nascimento: <input type="date" id="data_nascimento" min="2000-01-01" max="2024-12-31">
     <br> <br>
@@ -17,10 +17,10 @@
     </textarea>
     <br> <br>
     <select>
-        <option> Programação </option>
-        <option> Design </option>
-        <option> Redes </option>
-        <option> Suporte </option>
+        <option value="programacao"> Programação </option>
+        <option value="design"> Design </option>
+        <option value="redes"> Redes </option>
+        <option value="suporte"> Suporte </option>
     </select>
     <br> <br>
     <button type="submit">Entrar</button>
